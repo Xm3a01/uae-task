@@ -1,0 +1,128 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    /* flex-direction: row; */
+    min-width: 50%;
+    align-items: center;
+    /* flex-shrink:4; */
+    /* margin-bottom: 100vh; */
+    /* align-items: center; */
+    /* height: 100vh; */
+
+    /* position: fixed; */
+    /* top: 50%;
+    left: 50%; */
+    /* bring your own prefixes */
+    /* transform: translate(-50%, -50%); */
+
+
+}
+
+/* @media screen {
+    .container {
+} */
+
+.switch {
+    /* background-color: red; */
+    position: relative;
+    /* width: 30%; */
+    height: 53px;
+    width: 300px;
+}
+
+.switch input {
+    appearance: none;
+    -webkit-appearance: none;
+    /* width: 100%; */
+}
+
+.slider {
+    position: absolute;
+    background-color: #f0ba2622;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 12px;
+    border:1px solid #8b8b8a31;
+    align-content: center;
+    padding-top: 12px;
+    color: #58e00fd0;
+    width: 350px;
+    flex-grow: 4;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.toggle-control {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 4px;
+    /* right: 4px; */
+    bottom: 10px;
+    height: 36px;
+    width: 36px;
+    scale: 2.4;
+    border:0.4px solid #e0e62c5c;
+    border-radius: 25px;
+    /* background-image: url('/public/fingerprint.svg'); */
+
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10.7px);
+    -webkit-backdrop-filter: blur(10.7px);
+
+    margin: 2px;
+    border-width:thin;
+    /* border: 2px; */
+
+    /* background-color: #000000; */
+}
+
+.cover-container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top:4px;
+    border-radius: 17px;
+    background-image: linear-gradient(
+     rgb(88, 218, 81) ,
+     rgb(244, 204, 124)
+     );
+    /* border-color:#d3d5d131; */
+    /* border:3px solid #f4f6f461 ; */
+}
+
+/* .cover-round{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #58e00fd0;
+    border-radius: 15px;
+    /* justify-content: center; */
+    /* position: absolute; */
+ 
+
+.image-toggle {
+    /* position: absolute; */
+    background-image: url('/public/fingerprint.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    height: 20px;
+    width: 20px;
+    /* border:0.3px solid rgba(244, 241, 241, 0.232); */
+    border-radius: 15px;
+    /* background-color: green; */
+    padding: 4px;
+    align-self: center;
+    /* background-color: linear-gradient(180deg, rgba(34, 193, 195, 0.8212535014005602) 7%, rgba(34, 193, 195, 0.8212535014005602) 9%, rgba(34, 193, 195, 0.8212535014005602) 11%, rgba(34, 193, 195, 0.8212535014005602) 14%, rgba(34, 193, 195, 0.8212535014005602) 16%, rgba(34, 193, 195, 0.8212535014005602) 20%, rgba(34, 193, 195, 0.8212535014005602) 22%, rgba(152, 240, 78, 0.8548669467787114) 70%, rgba(152, 240, 78, 0.8548669467787114) 79%, rgba(152, 240, 78, 0.8548669467787114) 81%, rgba(152, 240, 78, 0.8548669467787114) 83%, rgba(152, 240, 78, 0.8548669467787114) 86%, rgba(152, 240, 78, 0.8548669467787114) 90%);
+    background-color: rgb(34, 195, 98); */
+}
+
+input:checked+.toggle-control{
+    transform: translateX(300px);
+    background-color: #58e00fd0;
+    /* right: 100px; */
+}
